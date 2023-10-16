@@ -13,8 +13,12 @@
 <body>
     <script>
         var nome = window.prompt ("Qual é o seu nome? ")
-        document.write(`Seu nome tem ${nome.length} letras`)
-    /*document.write(nome)vai escrever na tela tudo na mesma linha ${nome.lenght} vai mostrar a quantidade de caracteres que tem a variável document.writel(nome) vai escrever na tela é vai pular para próxima linha*/
+        document.write(`Olá, ${nome}. Seu nome tem ${nome.length} letras <br>`) 
+    /*document.write(nome):vai escrever na tela tudo na mesma linha ${nome.lenght} vai mostrar a quantidade de caracteres que tem a variável document.writel(nome) vai escrever na tela é vai pular para próxima linha*/
+    document.write(`Seu nome em letra maíuscula: ${nome.toUpperCase()} <br> `)
+    /*${nome.toUpperCase()}: vai colocar todas as letras em maísculo */
+    document.write(`Seu nome em letra minúsculo: ${nome.toLowerCase()} `)
+    /* ${nome.toLowerCase()}: vai colocar todas as letras em minúsculo */
     </script>
 </body>
 </html>
