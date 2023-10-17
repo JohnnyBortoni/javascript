@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: white;
+            font: normal 30px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p> <!--paragrafo 0-->
+    <p>Apredendo a usar o <strong>DOM</strong> em JS</p>
+    <div class="pinis">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[0]
+        window.document.write(p1.innerText)
+        window.document.getElementsByName
+       corpo.style.background = "red"
+       p1.style.color = "black"
+       var x = window.document.querySelector("div.pinis")
+       x.style.background = "black"
+    </script>
+    <!-- DOM (Document Object Model): É um conjunto de objetos dentro do naveguador que vai dar acessos aos componentes internos do website
+    Árvore DOM: É como uma árvore aonde está localizado todos os componentes que foram usados no website 
+    window.document.getElementsByTagName: Vai localizar pelo nome da tag 
+    window.document.getElementById: Vai localizar pelo id da tag 
+    window.document.getElementsByClassName: Vai localizar pela class da tag 
+    window.document.getElementsByName: Vai localizar pelo nome do objeto 
+    querySelector(): Vai localizar pela tag, e pelo id ou pela class-->
+    
+</body>
+</html>
