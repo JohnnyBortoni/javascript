@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#dick {
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+      <div id="dick" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()" onmousedown="clicar_e_segurar()"> <!--É um dos métodos de colocar eventos DOM, pelo HTML-->
+         Venha interagir
+      </div>
+      <script>
+        var ar = window.document.getElementById("dick") <!--Colocar a variavel fora n e o certo mas por enquanto tem q ser assim-->
+       function clicar() {
+        ar.innerHTML = "Gozei"
+       }
+       function entrar() {
+        ar.innerHTML = "Entrou, continua vai"
+       }
+       function saiu() {
+        ar.innerHTML = "Mas já??"
+       }
+       function clicar_e_segurar() {
+        ar.innerHTML = "ISSO, VAI GOSTOSO"
+       }
+      </script>
+      <!--Eventos DOM: São eventos que são gerados pelo usuário, para manipular eles e preciso de uma function e configurar ela->
+</body>
+</html>

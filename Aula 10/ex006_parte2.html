@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM parte 2</title>
+    <style>
+        div#ass {
+            background-color: rebeccapurple;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="ass">Venha interagir</div>
+    <script>
+       var julia = window.document.getElementById("ass")
+       julia.addEventListener("click", clicar) <!--Outra forma de colocar eventos DOM-->
+       julia.addEventListener("mouseenter", entrar)
+       julia.addEventListener("mouseout", saiu)
+
+       function clicar() {
+        julia.innerHTML = "Clicou"
+       }
+       function entrar() {
+        julia.innerHTML = "Entrou, continua vai"
+        julia.style.background = "Red"
+       }
+       function saiu() {
+        julia.innerHTML = "Mas já??"
+        julia.style.background = "rebeccapurple"
+       }
+    </script>
+</body>
+</html>

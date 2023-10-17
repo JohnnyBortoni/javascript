@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas básicas </title>
+</head>
+    <style>
+         body {
+             font: normal 25px Helvetica
+    }
+         h1 {
+            text-align: center;
+         }
+         input {
+             font: normal 25px Arial;
+             width: 100px;
+    }
+         div#res {
+             margin-top: 23px;
+    }
+    </style>     
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()"> 
+    <div id="resp0">Resultado</div> <br>
+    <input type="number" name="txtn3" id="txtn3"> -
+    <input type="number" name="txtn4" id="txtn4">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <div id="resp1">Resultado</div>
+     <script>
+        function somar() {
+            var tn1 = window.document.getElementById("txtn1")
+            var tn2 = window.document.getElementById("txtn2")
+            var resp0 = window.document.getElementById("resp0")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var souma = n1 + n2
+            resp0.innerHTML = `O resultado da soma de ${n1} e ${n2}, é <strong>         ${souma}</strong>`
+        }
+        function subtrair() {
+            var tn3 = window.document.getElementById("txtn3")
+            var tn4 = window.document.getElementById("txtn4")
+            var resp1 = window.document.getElementById("resp1")
+            var n1 = Number(tn3.value)
+            var n2 = Number(tn4.value)
+            var subtra = n1 - n2
+            resp1.innerHTML = `O resultado da subtração de ${n1} e ${n2}, é <strong>    ${subtra}</strong>`
+        }
+     </script>
+</body>
+</html>
