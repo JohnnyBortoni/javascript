@@ -43,7 +43,7 @@ function potenciacao() {
     var poten = n1 ** n2
     resp4.innerHTML = `O resultado da potenciação de ${n1} e ${n2}, é <strong>          ${poten.toFixed(4)}</strong>`
 }
-function raiz_quadrada() {
+function raiz_quadrada() { 
     var tn11 = window.document.getElementById("txtn11")
     var resp5 = window.document.getElementById("resp5")
     var n1 = Number(tn11.value)
